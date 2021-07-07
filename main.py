@@ -8,7 +8,7 @@ Width = 900
 Height = 650
 pygame.display.set_mode((Width,Height))
 #Spaceship#
-spaceship = pygame.image.load("spaceship.png")
+spaceship = pygame.image.load("Ship.png")
 spaceshipx = Width/2
 spaceshipy = Height/2
 speedx = 0
@@ -26,7 +26,7 @@ def moveY(joysticky):
 def UpdateSpaceship(x,y):
   screen.blit(spaceship,(x,y))
 #laser#
-laser = pygame.image.load("laser.png")
+laser = pygame.image.load("Laser (1).png")
 laserx = 0
 lasery = 0
 def Shoot():
