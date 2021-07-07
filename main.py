@@ -6,7 +6,7 @@ def sin(self,value):
   math.sin(self,value)
 Width = 900
 Height = 650
-pygame.display.set_mode((Width,Height))
+screen = pygame.display.set_mode((Width,Height))
 #Spaceship#
 spaceship = pygame.image.load("Ship.png")
 spaceshipx = Width/2
@@ -42,6 +42,8 @@ lemonx = 0
 lemony = 0
 direction = 0
 def NextEnemy(enemy):
+  global lemonx
+  global lemony
   direction = random.randint(-180,180)
   lemonx = lemonx + -350 * math.sin(direction)
   lemony = lemony + -350 * math.cos(direction)
